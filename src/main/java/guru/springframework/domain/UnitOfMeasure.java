@@ -6,30 +6,29 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * Copyright: Copyright ©2020 Description: An optional description... Created on : 24/04/2020
- *
- * @author KBarry1
+ * Created by jt on 6/13/17.
  */
 @Entity
 public class UnitOfMeasure {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     private String description;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String unitOfMeasure) {
-        this.description = unitOfMeasure;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
